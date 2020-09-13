@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>WeatherUp</h1>
+        </header>
+        <section class="wrapper">
+
+            <section class="left-section">
+                <form action="" class="search-form">
+                    <label for="search-city">
+                        Search City
+                    </label>
+                    <input type="text" class="search-box" id="search-city" required>
+                    <button type="submit">Go!</button>
+                </form>
+
+
+                <section class="weather-display">
+
+                    <p class="dashboard-deg">30&deg;C</p>
+                    <canvas id="weatherIcon"class="icon" width="128" height="128"></canvas>
+                    <div>
+                        <strong class="dashboard-state">
+                            <p>New York,
+                                <br>US</p>
+                        </strong>
+
+                        <p class="dashboard-date">22 Sept, 2020</p>
+                    </div>
+
+                </section>
+
+                <section>
+
+                    <p class=" section-styles">
+                        <strong class="description">clear with Periodic Clouds</strong>
+                    </p>
+
+                    <div class="parameters section-styles">
+                        <p>WIND: <strong class="wind">8 m/s</strong> </p>
+                        <p>HUMIDITY: <strong class="humidity"><span>30</span>%</strong></p>
+                    </div>
+
+
+                </section>
+               
+            </section>
+            
+            <aside class="right-section">
+                 
+                <div class="weekly-forecast-left">
+
+                </div>
+               <div class="weekly-forecast-right">
+               <figure> <canvas id="weather0"class="icon" width="40" height="40"></canvas></figure>
+                <figure><canvas id="weather1"class="icon" width="40" height="40"></canvas></figure>
+                <figure><canvas id="weather2"class="icon" width="40" height="40"></canvas></figure>
+                <figure><canvas id="weather3"class="icon" width="40" height="40"></canvas></figure>             
+                <figure><canvas id="weather4"class="icon" width="40" height="40"></canvas></figure>
+
+               </div>
+            </aside>
+
+        </section>
+
+    </main>
+    <script src="skycons.js"></script>
+    <script src="weather.js"></script>
+
+    
+</body>
+
+</html>
